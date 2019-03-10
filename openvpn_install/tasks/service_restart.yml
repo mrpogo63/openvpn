@@ -1,0 +1,14 @@
+---
+ - name: service start
+   become: yes
+   service:
+     name: openvpn
+     state: started
+
+ - name: autostart service
+   become: yes
+   service:
+     name: openvpn
+     enabled: yes
+
+...

@@ -1,0 +1,6 @@
+---
+ - hosts: clients
+   gather_facts: no
+   become: yes
+   roles:
+    - openvpn_install

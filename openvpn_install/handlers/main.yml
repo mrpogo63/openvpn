@@ -1,0 +1,7 @@
+---
+# handlers file for openvpn_install
+
+ - name: restart openvpn service
+   service:
+     name: openvpn
+     state: restarted

@@ -1,0 +1,6 @@
+---
+# defaults file for openvpn_install
+
+openvpn_server_ip: 8.8.8.8
+openvpn_server_port: 2195
+
