@@ -5,11 +5,4 @@
    register: status_openvpn_service
   
  - name: view result service
-   debug: var="status_openvpn_service.stdout_lines.Loaded"
-
- - name: check process openvpn
-   shell: ifconfig | grep tun
-   register: status_openvpn_process
-
- - name: view result process
-   debug: var="status_openvpn_process.stdout_lines"
+   debug: var="status_openvpn_service.stdout_lines"
